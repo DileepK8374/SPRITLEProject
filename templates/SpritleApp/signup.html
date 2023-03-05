@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'SpritleApp/home.html' %}
+{%block body_block%}
+    <div align='center'>
+        <h3>Register Your Login!!</h3>
+        <form method="post">
+            {{formobj.as_p}}
+            {%csrf_token%}
+            <button type="submit">Register-Here</button> | <a href="/accounts/login/">Login</a>
+        </form>
+    </div>
+{%endblock%}
